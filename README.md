@@ -1,6 +1,6 @@
 # Networking
 
-#MP0 Hand In
+# MP0 Hand In
 
 We will grade only the files that are submitted through SVN. Use the name mp0client.c for your source
 code. Also modify the makefile so that execution of the command make mp0client causes the executable
@@ -22,9 +22,9 @@ your code, we will first call make mp0client to compile it, and then call:
 Finally, running make clean should delete all executable files and any other temporary file that your makefile or
 programs create. 
 
-#MP1 Hand In
+# MP1 Hand In
 
-#client
+## client
 
 Your code should compile to generate an executable named http_client, with the usage specified as follows:
 
@@ -64,7 +64,7 @@ HTTP/1.1 301 Moved Permanently
 
 Location: http://www.example.org/index.asp
 
-#server
+## server
 
 Your code should compile to generate an executable named http_server. It should take one command line argument,
 the port number, and start listening on the port specified once started.
