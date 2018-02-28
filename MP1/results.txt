@@ -1,0 +1,17 @@
+test results:
+
+ wget small file from your server succeeded!
+ your client getting file from your server succeeded!
+-15:  concurrency failed: 'very' large file not correctly downloaded
+ your client handled a 301 redirect properly.
+ your client completed a simple request.
+ test non existing file passed.
+ No .git folders found. Pass. 
+
+ Do use the (SO_REUSEADDR | SO_REUSEPORT ) socket option. Pass. 
+====================
+
+version:10
+score: 85/100
+
+Regraded to 100
