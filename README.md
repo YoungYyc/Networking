@@ -93,14 +93,20 @@ You can do so by handling each connection in a new thread.
 ## Our Environment
 Your nodes will all run on the same machine. There will be a made-up topology applied to them in the following
 manner:
+
 • For each node, a virtual interface (eth0:1, eth0:2, etc) will be created and given an IP address.
+
 • A node with ID n gets address 10.1.1.n. IDs 0-255 inclusive are valid.1
+
 • Your program will be given its ID on the command line, and when binding a socket to receive UDP packets,
 it should specify the corresponding IP address (rather than INADDR_ANY / NULL).
+
 • Iptables rules will be applied to restrict which of these addresses can talk to which others. 10.1.1.30 and
 10.1.1.0 can talk to each other if and only if they are neighbors in the made-up topology.
+
 • The topology's connectivity is defined in a file that gets read by the script that creates the environment. The
 link costs are defined in files that tell nodes what their initial link costs to other nodes are, if they are in fact
 neighbors.
+
 • A node's only way to determine who its neighbors are is to see who it can directly communicate with.
 Nodes do not get to see the aforementioned connectivity file.
